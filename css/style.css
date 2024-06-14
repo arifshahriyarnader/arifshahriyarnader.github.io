@@ -3,7 +3,9 @@
     padding:0;
     box-sizing: border-box;
 }
-
+body{
+    font-family: "Open Sans", sans-serif;
+}
 ul{
     list-style: none;
 }
@@ -146,6 +148,7 @@ a{
     justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 30px;
+    gap:20px;
 }
 
 .project{
@@ -154,9 +157,8 @@ a{
     text-align: center;
     border:1px solid #ccc;
     border-radius: 8px;
-    margin:0px auto;
+    
 }
-
 
 .project h3{
     padding:15px;
@@ -171,19 +173,26 @@ a{
 
 .project a{
     font-size:18px;
+    cursor:pointer;
 }
 .contact_sec{
     margin: 80px 80px;
     padding: 50px;
 }
-
+.contact_heading h2{
+    padding-top:10px;
+}
+.contact_heading p{
+    padding-top: 10px;
+    font-size: 15px;
+}
 .contact_container{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .contact_form{
-    margin-bottom:150px;
+    margin-bottom:100px;
 }
 form{
     display:flex;
@@ -192,9 +201,30 @@ form{
 form > input{
     width:400px;
     padding:5px;
+    font-size: 16px;
     cursor: pointer;
 }
-
+textarea{
+    height:100px;
+    width:400px;
+    padding:5px;
+    font-size:16px;
+}
+.contact_form button{
+    background-color: #F25836;
+    color:#F0F0F0;
+    width:200px;
+    padding:15px 35px;
+    font-size: 18px;
+    border:2px solid #333;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.contact_form button:hover{
+    background-color:#333333;
+    color:#fff;
+}
 .footer_sec{
     background-color: #333333;
     padding: 30px;
